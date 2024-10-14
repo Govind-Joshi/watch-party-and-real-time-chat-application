@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.chat-container {
+    width: 360px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+}
+
+.header {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.logo {
+    font-size: 18px;
+}
+
+.party {
+    color: white;
+}
+
+.flix {
+    color: red;
+    font-weight: bold;
+}
+
+.copy-link {
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+.chat-window {
+    flex-grow: 1;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.emojis {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.chat-input input {
+    border: none;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.chat-input input:focus {
+    outline: none;
+}
+
+.chat-input button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.gif_box{
+
+background-color: rgb(255, 255, 255);
+box-shadow: #bdbcbc;
+border-radius: 10px;
+
+
+
+}
+
+#chat_box_child {
+    display: flex;
+    flex-direction: column-reverse; /* This reverses the order of elements */
+    overflow-y: auto;
+    height: 85%; /* Set this to your preferred height */
+    color: #fff;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    height: 530px;
+}
+
+
+
+.hidden_input_img_box {
+    opacity: 0;  /* Hide the input box */
+    cursor: pointer;
+    z-index: 2;  /* Make sure the input is above the image */
+}

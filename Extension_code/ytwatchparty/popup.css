@@ -1,0 +1,252 @@
+/* body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#parent{
+width: 200px;
+height:200px ;
+text-align: center;
+justify-content: center;
+align-items: center;
+
+}
+
+#create_party{
+    padding: 4px;
+
+
+}
+#showurl{
+    padding: 4PX;
+}
+#chat_box_child{
+    overflow-y: hidden;
+}
+#save_name{
+    padding: 2px;
+}
+#showuserNameP{
+    display: flex;
+ flex-direction: row;
+ padding: 4px;
+
+}
+#userName{
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 10px;
+    width: 68%;
+}
+#UserImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 10PX;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 360px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.party {
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.flix {
+    color: red;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+}
+
+.toggle-switch {
+    display: flex;
+    align-items: center;
+}
+
+.off, .on {
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #4d00ff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(16px);
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+}
+
+.input-text {
+    flex-grow: 1;
+    /* padding: 8px; */
+    margin-left: 10px;
+    border: none;
+    background-color: #f0f0f0;
+    outline: none;
+    font-size: 16px;
+}
+
+.save-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.party-btn {
+    background: linear-gradient(to right, #8a2be2, #a64ce6);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.copy-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.copy-link {
+    flex-grow: 1;
+    border: none;
+    padding: 8px;
+    background-color: #f0f0f0;
+    font-size: 12px;
+    outline: none;
+    color: #333;
+}
+
+.copy-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#destory_sassion{
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+#UserImg{
+
+    border-radius: 8PX;
+}
+.g_para{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 600;
+font-size: 13px;
+
+
+}
+.g_para ol{
+    height: 250px;
+    padding: 1.5px;
+    word-spacing: 2px;
+   
+}
+#alert_msg{
+    color: red;
+}

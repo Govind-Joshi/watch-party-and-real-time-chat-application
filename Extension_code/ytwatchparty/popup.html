@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div  style="padding: 20px;">
+    <div id="parent">
+     
+            <div id="showuserNameP">
+                <img src="img/any.png" alt="UserIcon" id="UserImg">
+                <input id="userName" type="text" value="" placeholder="Set User Name">
+            </div>
+
+<button id="save_name">Save</button>
+<button id="copy">copy</button>
+
+    <button id="create_party" disabled >Create Party</button>
+<div id="userinfoDiv"  style="display: none;">
+
+  <div id="showurl"></div>
+  <div style="display: flex;flex-direction: row;">
+    <div>Only You Can Control Video</div>
+  <input type="checkbox" id="cheack_box_control">
+
+</div>
+<button id="disconnectButton"  >leave Sassion</button>
+
+
+</div>
+
+</div>
+<button id="destory_sassion" style="display: none;">leave Sassion</button>
+</div>
+    <script src="popup.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PartyFlix</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with logo and toggle switch -->
+        <header class="header">
+            <div class="logo">
+                <span class="party">Party</span><span class="flix">Flix</span>
+            </div>
+            <!-- <div class="toggle-switch">
+                <span class="off">OFF</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <span class="on">ON</span>
+            </div> -->
+        </header>
+        <div class="g_para" id="g_para">
+            <h2>How to Use Watch Party Plus</h2>
+            <ol>
+                <li>
+                    **PartyFlix Support** PartyFlix Provide Support For "Prime video","HotStar","JioCinema","YouTube",.
+                </li>
+                <li>
+                    **Choose a Video Streaming Platform:** Open any valid video streaming platform and start playing your desired video.
+                </li>
+                <li>
+                    **Access the Extension:** Click on the Watch Party Plus extension icon to open the popup window.
+                </li>
+                <li>
+                    **Start Your Watch Party:** Click on the "Start Party" button, create your unique party URL, and share it with your friends for an enjoyable viewing experience together!
+                </li>
+                <li>
+                For Best Experience Install  "Ad Blocker Plus"
+                </li>
+            </ol>
+        </div>
+        
+         
+        <!-- Input box with avatar and save button -->
+       <div style="display: none;" id="input_section_p"> 
+        <div id="alert_msg"></div>
+        <div class="input-section"  >
+            <div class="avatar">
+                <img src="https://img.icons8.com/emoji/48/000000/smiling-face-with-sunglasses.png" alt="UserIcon" id="UserImg">
+            </div>
+            <input type="text" id="userName" placeholder="Set User Name.." class="input-text" >
+            <button class="save-btn" id="save_name" >SAVE</button>
+        </div>
+
+        <div style="display: flex;flex-direction: row;margin-bottom: 9px;">
+          <div>Only You Can Control Video</div>
+        <input type="checkbox" id="cheack_box_control">
+      </div>
+
+        <!-- Start the Party button -->
+        <button class="party-btn" id="create_party"  >Start the Party</button>
+     
+        <!-- Copy link section -->
+        <div id="userinfoDiv"  style="display: none;"> 
+        <div class="copy-section">
+            <input type="text" id="showurl"  value="http://localhost:5002/api/ytr?ytSessionId=session-y2mi331fp" readonly class="copy-link">
+            <button class="copy-btn" id="copy">Copy Link</button>
+        </div>
+        <!-- <button class="party-btn" id="disconnectButton" >leave Sassion</button> -->
+        </div>
+    </div> 
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

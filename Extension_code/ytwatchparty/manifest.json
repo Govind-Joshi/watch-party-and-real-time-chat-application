@@ -1,0 +1,81 @@
+{
+    
+    
+      "manifest_version": 3,
+    
+      "name": "ytparty",
+      "description": "yt watch party",
+      "version": "1.0",
+     
+    
+      "action": {
+       
+       
+        "default_popup": "popup.html"
+      },
+      "background": {
+        "service_worker": "background.js",
+        "type": "module"
+      },
+      "permissions": [
+        "tabs",
+        "storage",
+        "scripting"
+
+      ],
+  
+    
+      "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "content_scripts": [
+        {
+          "js": [
+              "common.js"
+          ],
+          "run_at": "document_end",
+          "matches": [
+              "http://*/*",
+              "https://*/*"
+          ]
+      },
+        {
+          "js": [
+               "emoji_support.js",
+                "socket_min.js"
+               
+               
+             
+            ],
+            "css":[
+               "c1.css"
+            ],
+            "run_at": "document_end",
+            "match_about_blank": false,
+            "matches": [
+                "https://*.youtube.com/*",
+                "https://*.hotstar.com/*",
+                "https://*.jiocinema.com/*",
+                "https://*.primevideo.com/*"
+            ]
+        },
+        {
+          "matches": ["https://*.netflix.com/*"],
+          "js": ["chat.js"],
+          "world": "MAIN"
+        }
+    
+    
+      ],
+    
+      "web_accessible_resources": [
+      {
+        "resources": ["img/*","c1.js","snyc.js","chat.js", "emoji_support.js","htcontent.js","hotchat.js","jioCinemaChat.js","jioCinemaInit.js"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+    
+    
+    
+    }

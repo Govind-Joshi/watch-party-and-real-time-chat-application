@@ -1,0 +1,361 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+} */
+
+.chat-container {
+    width: 25%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white !important;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+    top: 1%;
+    z-index: 99999;
+}
+
+
+.header {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.logo {
+    font-size: 18px;
+}
+
+.party {
+    color: white;
+}
+
+.flix {
+    color: red;
+    font-weight: bold;
+}
+
+.copy-link {
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+.chat-window {
+    flex-grow: 1;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.emojis {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 6px;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.chat-input input {
+    border: none;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.chat-input input:focus {
+    outline: none;
+}
+
+.chat-input button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+    .meme_gif{
+        width: 100px;
+        height: 100px;
+    }
+
+
+
+    #chat_box_child {
+        display: flex;
+        flex-direction: column-reverse; /* This reverses the order of elements */
+        overflow-y: auto;
+        height: 85%; /* Set this to your preferred height */
+        color: #fff;
+        padding: 10px;
+        /* border: 1px solid #ccc; */
+        height: 516px;
+    }
+
+/*---------------------------------------------
+
+
+/* #chat_box{
+width: 30%;
+height: 650px;
+position: fixed;
+right: 0;
+z-index: 999;
+
+background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+
+top:60px;
+border-radius: 8px;
+
+} */
+
+#gif_parent{
+    width: 300px;
+    height: 300px; 
+ 
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+/* #input_chat_box{
+position: fixed;
+bottom: 31px;
+left: 71%;
+background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
+width: 17.1%;
+color: #ffff;
+border-radius: 14px;
+height: 37px;
+
+} */
+
+/* #input_parent{
+    display: flex;
+    flex-direction: row;
+
+  
+} */
+
+/* #img_send{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 31px;
+    left: 89%;
+  
+} */
+#emoji_button{
+    /* position: fixed;
+    left: 92%;
+    bottom: 5%;
+
+   font-size: 25px;
+   background: transparent;
+   border: none; */
+
+}
+
+
+.user_chat {
+    border-radius: 10px;
+    padding: 10px;
+    background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
+    margin-top: 5px;
+    align-self: flex-end; /* Aligns the chat to the right */
+    max-width: 70%; /* Prevents the chat bubble from taking the full width */
+    word-wrap: break-word;
+    font-size: 25px;
+}
+
+.other_chat {
+    border-radius: 10px;
+    padding: 10px;
+    background: radial-gradient(circle at 10% 20%, rgb(102, 69, 86) 0%, rgb(34, 34, 34) 90%); /* Different color for other side */
+    margin-top: 5px;
+    align-self: flex-start; /* Aligns the other side's messages to the left */
+    max-width: 70%;
+    word-wrap: break-word;
+    font-size: 25px;
+}
+
+.emoji-picker__wrapper{
+    position: absolute !important;
+    z-index: 9999999 !important; 
+  left: 100% !important;
+  top: 10% !important;
+
+}
+
+/* .input_img_box{
+position: absolute;
+right: 3%;
+bottom: 5%;
+width: 8%;
+height: 5%;
+
+} */
+
+.user_img {
+    /* width: 75%;
+    height: 40%; */
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 5px;
+    /* background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%); */
+    background: transparent;
+    margin-top: 5px;
+    align-self: flex-end; /* Aligns the user's images to the right */
+    max-width: 70%;
+    word-wrap: break-word;
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+    display: block;
+}
+.other_img {
+    /* width: 75%;
+    height: 40%; */
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 5px;
+    /* background: radial-gradient(circle at 10% 20%, rgb(102, 69, 86) 0%, rgb(34, 34, 34) 90%);  */
+    background: transparent;
+    margin-top: 5px;
+    align-self: flex-start; /* Aligns the other user's images to the left */
+    max-width: 70%;
+    word-wrap: break-word;
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+    display: block;
+}
+.input_img_container {
+    position: relative;
+  
+   left: 89%;
+    bottom: -27px;
+}
+
+
+
+.infop{
+  
+}
+
+.chat_text{
+    padding: 4px 28px;
+}
+.spantext{
+    font-size: 15PX;
+  color: rgb(0, 255, 153);
+    font-weight: 700;
+}
+.user_img2{
+    width: 23px;
+    border-radius: 8px;
+}
+.imgdivuser{
+    align-self: flex-end;
+}
+
+.imgdivother{
+    align-self: flex-start;
+}
+
+#gif-box{
+
+    width: 100%;
+ 
+    display: flex;
+    flex-wrap: wrap;
+   overflow-y: scroll;
+    height: 300px;
+    position: absolute;
+    z-index: 999999;
+
+    bottom: 137px;
+   background-color: #f1f1f1;
+   padding-left: 40px;
+
+
+
+}
+
+.hidden_input_img_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;  /* Hide the input box */;
+  /* Make sure the input is above the image */
+}
+
+#chat_toggle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    position: fixed;
+    top: 50%;
+    right: 360px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.5s ease; /* Smooth transition for position */
+       z-index: 999999;
+       padding-left: 15px;
+}
+
+#arrow{
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 20px solid #000; /* Color of the arrow */
+    margin-right: 10px;
+    transition: transform 0.5s ease; /* Smooth arrow rotation */
+
+}
+/* right: 200px;
+background: rgb(255, 255, 255);
+height: 38px;
+padding-left: 15px;
+width: 38px;
+top: 50%;
+position: fixed; */
